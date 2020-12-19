@@ -14,8 +14,8 @@ async function translater(input){
     return fetch(baseURL + encodeURI(removeaccents(input)))
     .then(res => res.text())
     .then(res => res.replace(/[\n\r]/g,''))
-    .then(res => res.replace(/�/g,'').replace(/\s+/g,' ').trim())
     .then(res => res.match(/(?<=<td><span class="Stile3">)(.*)(?=<\/span><\/td>)/g)[0])
+    .then(res => res.replace(/�/g,'').replace(/\s+/g,' ').replace(/<br>/,'\n').trim())
 }
 
 module.exports = translater;
