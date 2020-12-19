@@ -15,7 +15,13 @@ async function translate(input){
     .then(res => res.text())
     .then(res => res.replace(/[\n\r]/g,''))
     .then(res => res.match(/(?<=<td><span class="Stile3">)(.*)(?=<\/span><\/td>)/g)[0])
-    .then(res => res.replace(/�/g,'').replace(/\s+/g,' ').replace(/<br>/g,'\n').trim())
+    .then(res => 
+        res
+        .replace(/�/g,'')
+        .replace(/<br>/g,'\n')
+        .replace(/\s+/g,' ')
+        .replace(/^\s+|\s+$/gm,'')
+    );
 }
 
 module.exports = translate;
