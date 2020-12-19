@@ -1,6 +1,6 @@
 {
   "name": "neapolitan-wrapper",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Light weight node package for italian-to-neapolitan translator.",
   "main": "index.js",
   "repository": {
