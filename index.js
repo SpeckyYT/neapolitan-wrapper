@@ -8,7 +8,7 @@ const baseURL = 'http://www.giggino.com/traduzione-italiano-napoletano.asp?t='
  * @param {string} input
  * @returns {Promise<string>}
  */
-async function translater(input){
+async function translate(input){
     if(typeof input != 'string') return '';
 
     return fetch(baseURL + encodeURI(removeaccents(input)))
@@ -18,4 +18,4 @@ async function translater(input){
     .then(res => res.replace(/�/g,'').replace(/\s+/g,' ').replace(/<br>/,'\n').trim())
 }
 
-module.exports = translater;
+module.exports = translate;
