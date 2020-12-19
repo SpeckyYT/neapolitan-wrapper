@@ -16,5 +16,15 @@
   "dependencies": {
     "node-fetch": "^2.6.1",
     "remove-accents": "^0.4.2"
-  }
+  },
+  "keywords": [
+    "napoli",
+    "napolitano",
+    "naples",
+    "neapolitan",
+    "italian",
+    "translator",
+    "translate",
+    "dialect"
+  ]
 }
