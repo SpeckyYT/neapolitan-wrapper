@@ -1,0 +1,20 @@
+{
+  "name": "neapolitan-wrapper",
+  "version": "0.0.0",
+  "description": "Light weight node package for italian-to-neapolitan translator.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SpeckyYT/neapolitan-wrapper.git"
+  },
+  "author": "SpeckyYT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SpeckyYT/neapolitan-wrapper/issues"
+  },
+  "homepage": "https://github.com/SpeckyYT/neapolitan-wrapper#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "remove-accents": "^0.4.2"
+  }
+}
